@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Aero Forecast</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="forgot"><font color='c4c4c4'>Forgot your login details? </font><b>Ask Developer!</b></string>
+    <!-- string to show the text " Dont have an account-->
+    <string name="sign_up"><font color='c4c4c4'>Dont have an account? </font></string>
+    <string name="register"><font color='c4c4c4'>Register</font></string>
+</resources>

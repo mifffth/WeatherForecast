@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.bottomlayout.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_mapActivity"
+            app:destination="@id/mapActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.bottomlayout.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_registerPage"
+            app:destination="@id/registerPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/weatherFragment"
+        android:name="com.example.bottomlayout.WeatherFragment"
+        android:label="fragment_weather"
+        tools:layout="@layout/fragment_weather" />
+    <activity
+        android:id="@+id/mapActivity"
+        android:name="com.example.bottomlayout.MapActivity"
+        tools:layout="@layout/map_view"
+        android:label="MapActivity" />
+    <fragment
+        android:id="@+id/registerPage"
+        android:name="com.example.bottomlayout.RegisterPage"
+        android:label="RegisterPage" >
+        <action
+            android:id="@+id/action_registerPage_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+</navigation>

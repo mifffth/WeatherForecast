@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/shape_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <EditText
+            android:id="@+id/etCity"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:textColor="@color/grey"
+            android:paddingStart="20dp"
+            android:layout_marginEnd="8dp"
+            android:hint="Add new city here..."
+            android:paddingEnd="10dp"
+            android:drawableRight="@drawable/search"
+            android:background="@drawable/background_edit_text"
+            android:inputType="text" />
+
+        <ImageButton
+            android:id="@+id/btnAddCity"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_shape"
+            android:backgroundTint="@color/grey"
+            android:src="@drawable/zoom_in" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        tools:listitem="@layout/item_weather" />
+
+</LinearLayout>
